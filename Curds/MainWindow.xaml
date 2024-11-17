@@ -1,0 +1,47 @@
+﻿<Window x:Class="Curds.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Curds"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+
+            <StackPanel Orientation="Horizontal" Margin="10" >
+                <Label Content="Name" />
+                <TextBox Name="nametext" Width="300"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" >
+                <Label Content="Id" />
+                <TextBox Name="idtext" Width="300"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" >
+                <Label Content="Job" />
+                <TextBox Name="jobtext" Width="300"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" >
+             
+                <TextBox Name="searchtext" Width="300"/>
+                <Button Width="100" Content="Search" Margin="10,0" Click="SearchByName"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20" >
+                <Button Width="100" Height="20" Margin=" 0,0,20,0" Content="Insert" Click="Insert"/>
+                <Button Width="100" Height="20"  Margin=" 0,0,20,0" Content="Update" Click="Update"/>
+                <Button Width="100" Height="20"  Margin=" 0,0,20,0" Content="Delete" Click="Delete"/>
+
+            </StackPanel>
+            <StackPanel>
+                <DataGrid Width="500" Height="200" Name="datagrid"/>
+            </StackPanel>
+            
+            
+            
+            
+        </StackPanel>
+   
+        
+
+    </Grid>
+</Window>
